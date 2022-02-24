@@ -1,0 +1,5 @@
+package com.jtcindia.bean;
+
+public class Address {
+
+}

@@ -1,0 +1,52 @@
+package com.jtcindia.jsp;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class TestServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("init() method of TestServlet");
+	}
+
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		HttpSession ses = request.getSession();
+		ServletContext ctx = ses.getServletContext();
+
+		// 1) String Wrapper and Date
+		request.setAttribute("EM", "akgpcamp@gmail.com");
+		ses.setAttribute("PH", new Long(96480));
+		ctx.setAttribute("DOB", new Date());
+
+		// 2) Collection of String,Wrapper and Date
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		al.add(new Integer(11));
+		al.add(new Integer(22));
+		al.add(new Integer(33));
+		al.add(new Integer(44));
+		al.add(new Integer(55));
+		request.setAttribute("AL", al);
+
+		String str[] = { "Avinash", "Kumar", "Dhanbad" };
+		request.setAttribute("STR", str);
+
+		// 3) Collection of Collections(*JSTL)
+		ArrayList<ArrayList> al1 = new ArrayList<ArrayList>();
+		al1.add(al);
+		al1.add(al);
+		al1.add(al);
+		request.setAttribute("AL1", al1);
+	}
+
+}

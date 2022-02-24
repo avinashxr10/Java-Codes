@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<h1>Java Training Center</h1>
+		<table border="2" style="font-size: 26; color: red;">
+			<tr>
+				<td>1)String,Wrapper and Date :</td>
+				<td><m:out value="${requestScope.EM}"></m:out><br>
+					${sessionScope.PH }<br> ${applicationScope.DOB }<br></td>
+			</tr>
+			<tr>
+				<td>2)Collection of String,Wrapper and Date :</td>
+				<td><table bgcolor="#c3d559" style="font-size: 26;">
+						<tr>
+							<m:forEach var="x"items"${requestScope.AL }">
+								<td>${x }</td>
+							</m:forEach>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<m:forEach var="i" items="${sessionScope.STR }">
+								<td>${i }</td>
+							</m:forEach>
+						</tr>
+					</table></td>
+			</tr>
+			<tr>
+				<td>3) Collection of Collections :</td>
+				<td><table bgcolor="#c3d599" style="font-size: 26; color: red;">
+						<m:forEach var="list" items=${requestScope.AL1 }>
+							<tr>
+								<m:forEach var="x" items="${list }">
+									<td>${x}</td>
+								</m:forEach>
+							</tr>
+						</m:forEach>
+					</table></td>
+			</tr>
+
+		</table>
+	</center>
+</body>
+</html>

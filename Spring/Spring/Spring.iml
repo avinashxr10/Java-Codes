@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Jtcindia" removed="false">
+          <file>file://$MODULE_DIR$/src/jtcindia.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia1.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia2.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia3.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia4.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia5.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia6.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia7.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia12.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia13.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia14.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia15.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia16.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia17.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia18.xml</file>
+          <file>file://$MODULE_DIR$/src/jtcindia20.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="spring-aop-5.3.9-javadoc" level="project" />
+    <orderEntry type="library" name="javax.annotation-api-1.3.2" level="project" />
+  </component>
+</module>

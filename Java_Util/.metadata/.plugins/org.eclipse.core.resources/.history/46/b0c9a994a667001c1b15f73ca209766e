@@ -1,0 +1,13 @@
+package com.jtc.collection;
+
+import java.util.*;
+
+public class JTC1 {
+
+	public static void main(String[] args) {
+		ArrayList al = new ArrayList();
+		System.out.println(al);
+
+	}
+
+}

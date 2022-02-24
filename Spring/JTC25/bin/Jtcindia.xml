@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemalocation="http://www.springframework.org/schema/beans http: /
+	www.springframework.org/schema/beans/spring-beans-3.5.xsd">
+	<context:annotation-config />
+
+	<bean id="jtc" class="com.jtcindia.spring.JTCManager" />
+	<bean class="com.jtcindia.spring.JTCListener1" />
+	<bean class="com.jtcindia.spring.JTCListener2" />
+	<bean class="com.jtcindia.spring.JTCListener3" />
+</beans>

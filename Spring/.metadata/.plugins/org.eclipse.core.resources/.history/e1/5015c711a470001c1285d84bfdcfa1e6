@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemalocation=”http://www.springframework.org/schema/beans 
+		http://www.springframework.org / schema / beans / spring-beans-3.0.xsd ">
+
+	<context:annotation-config />
+	<bean
+		class=”org.springframework.beans.factory.config.customEditorConfigurer”>
+		<property name=”customEditors”>
+			<map>
+				<entery key=”com.jtcindia.spring.studentID”>
+					<value>com.jtcindia.spring.StudentIDEditor</value>
+				</entery>
+				<entry key=”com.jtcindia.spring.fee”>
+					<value>com.jtcindia.spring.FeeEditor</value>
+				</entery>
+					<entery key=”java.util.list>
+						<value>com.jtcindia.spring.listEditor</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<bean id=”student” class=”com.jtcindia.spring.student”>
+		<property name=”sid” valu=”B1-101” />
+		<property name=”sname” value=”somprakash” />
+		<property name=”phone”value=”9999” />
+		<property name=”fee” value=”100000,50000,50000 />
+		<property name=”emails”
+			value=aa@jtc.com,bb@jtc.com,cc@jtc,com.dd@jtc.com />
+		<property name=”phones”>
+			<list>
+				<value>1111</value>
+				<value>2222</value>
+				<value>3333</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

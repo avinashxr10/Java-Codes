@@ -1,0 +1,11 @@
+package com.jtcindia.spring;
+
+public class StudentId {
+	String bid;
+	int sid;
+
+	public StudentId(String bid, int sid) {
+		this.bid = bid;
+		this.sid = sid;
+	}
+}
