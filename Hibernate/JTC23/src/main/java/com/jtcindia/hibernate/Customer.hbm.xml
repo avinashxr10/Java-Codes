@@ -6,7 +6,7 @@
 <hibernate-mapping package="com.jtcindia.hibernate">
     <class name="Customer" table="customers">
         <id name="cid" column="cid" type="int">
-            <generator class="increment"></generator>
+            <generator class="increment"/>
         </id>
         <property name="cname"/>
         <property name="email"/>

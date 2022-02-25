@@ -20,8 +20,7 @@ Select a Node.js version below to view the changelog history:
 * [Node.js 0.10](doc/changelogs/CHANGELOG_V010.md) End-of-Life
 * [Archive](doc/changelogs/CHANGELOG_ARCHIVE.md)
 
-Please use the following table to find the changelog for a specific Node.js
-release.
+Please use the following table to find the changelog for a specific Node.js release.
 
 <!--lint disable maximum-line-length-->
 <table>
@@ -125,8 +124,7 @@ release.
 
 ## Notes
 
-* The [Node.js Long Term Support plan](https://github.com/nodejs/Release) covers
-  LTS releases.
+* The [Node.js Long Term Support plan](https://github.com/nodejs/Release) covers LTS releases.
 * Release versions in **bold** text are the most recent supported releases.
 
 ----
