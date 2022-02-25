@@ -1,5 +1,0 @@
-package com.jtcindia.hibernate;
-
-public class HibernateUtil {
-
-}
