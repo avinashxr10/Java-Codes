@@ -3,15 +3,41 @@ package com.jtcindia.hibernate;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "author")
 public class Author {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="aid")
 	private int aid;
+
+	@Column(name="aname")
 	private String aname;
+
+	@Column(name="email")
 	private String email;
+
+	@Column(name="dob")
 	private Date dob;
+
+	@Column(name="phone")
 	private long phone;
+
+	@CollectionOfElements
+	@JoinTable(name="quils",JoinColumns=@JoinColumn(name="aid"))
+	@Column(name="quils")
 	private List<String> quails;
+
+	@CollectionOfElements
+	@JoinTable(name="exps",JoinColumns=@JoinColumn(name="aid"))
+	@Column(name="exps")
 	private Set<String> exps;
+
+	@ManyToMany
+	@JoinTable(name="books_authors",JoinColumns=@JoinColumn(name="aid",ReferencedColumnName="aid"),InverseJoinColumns=@JoinColumn(name="bid",ReferencedColumnName="bid"))
 	private Set<Book> books;
 
 	public Author() {
